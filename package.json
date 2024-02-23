@@ -1,0 +1,39 @@
+{
+  "name": "react-native-ios-appattest",
+  "title": "React Native Ios Appattest",
+  "version": "1.0.0",
+  "description": "TODO",
+  "main": "index.js",
+  "files": [
+    "README.md",
+    "index.js",
+    "ios",
+    "react-native-ios-appattest.podspec"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/srinivas1729/react-native-ios-appattest.git",
+    "baseUrl": "https://github.com/srinivas1729/react-native-ios-appattest"
+  },
+  "keywords": [
+    "react-native"
+  ],
+  "author": {
+    "name": "Srinivas Visvanathan",
+    "email": "25495739+srinivas1729@users.noreply.github.com"
+  },
+  "license": "MIT",
+  "licenseFilename": "LICENSE",
+  "readmeFilename": "README.md",
+  "peerDependencies": {
+    "react": ">=16.8.1",
+    "react-native": ">=0.60.0-rc.0 <1.0.x"
+  },
+  "devDependencies": {
+    "react": "^16.9.0",
+    "react-native": "^0.61.5"
+  }
+}
