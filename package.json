@@ -21,11 +21,8 @@
   "keywords": [
     "react-native"
   ],
-  "author": {
-    "name": "Srinivas Visvanathan",
-    "email": "25495739+srinivas1729@users.noreply.github.com"
-  },
-  "license": "MIT",
+  "author": "Srinivas Visvanathan",
+  "license": "Apache-2.0",
   "licenseFilename": "LICENSE",
   "readmeFilename": "README.md",
   "peerDependencies": {
