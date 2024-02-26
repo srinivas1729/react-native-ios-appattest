@@ -32,15 +32,14 @@ RCT_EXPORT_METHOD(generateKeys:(RCTPromiseResolveBlock) resolve
     RCTLogTrace(@"Generating keys");
 
     [service generateKeyWithCompletionHandler:^(NSString * _Nullable keyId, NSError * _Nullable error) {
-      NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithCapacity:1];
       if (error == nil) {
         resolve(keyId);
       } else {
-        reject(@"Encountered unexpected error");//@([error code])
+        reject(@"error", @"Unexpected error", error);
       }
     }];
   } else {
-    reject(@"Attestation unsupported");
+    reject(@"error", @"Attestation unsupported", nil);
   }
 }
 
@@ -59,11 +58,11 @@ RCT_EXPORT_METHOD(attestKeys:(NSString *) keyId
         NSString *attestationBase64 = [attestationObject base64EncodedStringWithOptions:0];
         resolve(attestationBase64);
       } else {
-        reject(@"Encountered unexpected error");//@([error code])
+          reject(@"error", @"Unexpected error", error);
       }
     }];
   } else {
-    reject(@"Attestation unsupported");
+    reject(@"error", @"Attestation unsupported", nil);
   }
 }
 
@@ -82,11 +81,11 @@ RCT_EXPORT_METHOD(attestRequestData:(NSString*)requestDataHashBase64
         NSString *assertionBase64 = [assertionObject base64EncodedStringWithOptions:0];
         resolve(assertionBase64);
       } else {
-        reject(@"Encountered unexpected error");//@([error code])
+          reject(@"error", @"Unexpected error", error);
       }
     }];
   } else {
-    reject(@"Attestation unsupported");
+    reject(@"error", @"Attestation unsupported", nil);
   }
 }
 
