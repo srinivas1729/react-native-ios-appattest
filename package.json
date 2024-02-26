@@ -2,8 +2,13 @@
   "name": "react-native-ios-appattest",
   "title": "React Native Ios Appattest",
   "version": "1.0.0",
-  "description": "TODO",
+  "description": "Native module for React Native that wraps iOS App Attest APIs",
+  "author": "Srinivas Visvanathan",
+  "license": "Apache-2.0",
+  "licenseFilename": "LICENSE",
+  "readmeFilename": "README.md",
   "main": "index.js",
+  "types": "index.d.ts",
   "files": [
     "README.md",
     "index.js",
@@ -11,21 +16,11 @@
     "ios",
     "react-native-ios-appattest.podspec"
   ],
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/srinivas1729/react-native-ios-appattest.git",
     "baseUrl": "https://github.com/srinivas1729/react-native-ios-appattest"
   },
-  "keywords": [
-    "react-native"
-  ],
-  "author": "Srinivas Visvanathan",
-  "license": "Apache-2.0",
-  "licenseFilename": "LICENSE",
-  "readmeFilename": "README.md",
   "peerDependencies": {
     "react": ">=16.8.1",
     "react-native": ">=0.60.0-rc.0 <1.0.x"
@@ -33,5 +28,11 @@
   "devDependencies": {
     "react": "18.2.0",
     "react-native": "0.73.4"
-  }
+  },
+  "keywords": [
+    "react-native",
+    "ios",
+    "apple-appattest",
+    "security"
+  ]
 }
