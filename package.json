@@ -1,7 +1,7 @@
 {
   "name": "react-native-ios-appattest",
   "title": "React Native Ios Appattest",
-  "version": "0.5.0",
+  "version": "0.9.0",
   "description": "Native module for React Native that wraps iOS App Attest APIs",
   "author": "Srinivas Visvanathan",
   "license": "Apache-2.0",
