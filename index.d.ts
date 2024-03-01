@@ -3,7 +3,7 @@
  *
  * @returns {Promise<boolean>} A promise that resolves to 'true' if supported.
  */
-export async function attestationSupported(): Promise<boolean>;
+export function attestationSupported(): Promise<boolean>;
 
 /**
  * Generate key-pair in the Secure Enclave.
@@ -11,7 +11,7 @@ export async function attestationSupported(): Promise<boolean>;
  * @returns {Promise<string>} A promise that resolves to a keyId on success or rejects on failure
  *                            with error message.
  */
-export async function generateKeys(): Promise<string>;
+export function generateKeys(): Promise<string>;
 
 /**
  * Request Apple to attest the validity of a generated key-pair.
@@ -21,7 +21,7 @@ export async function generateKeys(): Promise<string>;
  * @returns {Promise<string>} A promise that resolves to the Attestation object (base64 encoded) on
  *                            success or rejects on failure with error message.
  */
-export async function attestKeys(
+export function attestKeys(
   keyId: string,
   challengeHashBase64: string
 ): Promise<string>;
@@ -36,7 +36,7 @@ export async function attestKeys(
  * @returns {Promise<string>} A promise that resolves to the Assertion object (base64 encoded) on
  *                            success or rejects on failure with error message.
  */
-export async function attestRequestData(
+export function attestRequestData(
   requestDataHashBase64: string,
   keyId: string
 ): Promise<string>;
