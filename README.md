@@ -18,7 +18,15 @@ Related repos:
 
 ```
 $ npm install react-native-ios-appattest --save
+// Link native components
 $ cd ios && pod install && cd ..
+```
+
+In case you have build time issues with Flipper, disable Flipper while linking
+native components.
+
+```
+NO_FLIPPER=1 pod install
 ```
 
 **_Note_** Attestation is only supported on real devices, not on simulators.
